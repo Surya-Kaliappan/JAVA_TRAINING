@@ -87,7 +87,7 @@ OPERATOR
 
 TYPES OF VARIABLE
 1) Local Variable
-2) Global Variable
+2) Instance or Global Variable
 3) Static Variable
 
 * IS the java 100% oops? - No
@@ -96,6 +96,7 @@ TYPES OF VARIABLE
 * JAVA has named by javabeans in Indonesia.
 * Other than '$' and '_' we can't able use any special symbols
 * \u denotes unicode. which has all language like english, tamil, etc.
+* Static means common to all objects.
 
 GITHUB SESSION:
 -> To initialize the git execute "git init" in the local repo.
