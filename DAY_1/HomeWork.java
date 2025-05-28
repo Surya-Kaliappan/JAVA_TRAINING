@@ -16,7 +16,5 @@ public class HomeWork{
         int value = input.nextInt();
         System.out.println("With Modulus Answer : "+(withModulus(value) ? "Even" : "Odd"));
         System.out.println("Without Modulus Answer : "+(withoutModulus(value) ? "Even" : "Odd"));
-    }
-
-    
+    }   
 }
