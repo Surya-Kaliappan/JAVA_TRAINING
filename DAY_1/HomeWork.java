@@ -6,7 +6,7 @@ public class HomeWork{
         return value%2==0;
     }
 
-    public boolean withoutModulus(int value){
+    public static boolean withoutModulus(int value){
         return (value&1)==0 ;
     }
 
