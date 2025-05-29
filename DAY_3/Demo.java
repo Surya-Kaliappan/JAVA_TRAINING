@@ -187,7 +187,7 @@ public class Demo{
         int n = input.nextInt();
         for(int row=n;row>0;row--){
             for(int col=0;col<row;col++){
-                System.out.print((char)(65+row-col-1));
+                System.out.print((char)(65+row-col-1)+" ");
             }
             System.out.println();
         }
@@ -195,12 +195,11 @@ public class Demo{
 
     static void CasewithAplha(){
         int n = input.nextInt();
-        int m=0;
+        int m=0,val;
         for(int row=0;row<n;row++){
-            int val;
             for(int col=0;col<=row;col++){
                 val = (row+col)%2==0 ? 32 : 0;
-                System.out.print((char)(65+m+val));
+                System.out.print((char)(65+m+val)+" ");
                 m++;
             }
             System.out.println();
