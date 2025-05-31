@@ -78,8 +78,8 @@ public class Number{
         }
     }
 
-    static void PrimeNumber(){
-        int n = input.nextInt();
+    static void PrimeNumber(int n){
+        // int n = input.nextInt();
         int j=1;
         for(int i=2;i<=n/2;i++){
             if(n%i==0){
@@ -87,7 +87,10 @@ public class Number{
                 break;
             }
         }
-        System.out.println(j==0 ? "It is not a Prime Number.." : "It is a Prime Number..");
+        // System.out.println(j==0 ? "It is not a Prime Number.." : "It is a Prime Number..");
+        if(j!=0){
+            System.out.print(n+" ");
+        }
     }
 
     static void LeepYear(){
@@ -100,6 +103,8 @@ public class Number{
     }
 
     public static void main(String[] args){
-        LeepYear();
+        for(int i=2;i<10;i++){
+            PrimeNumber(i);
+        }
     }
 }
