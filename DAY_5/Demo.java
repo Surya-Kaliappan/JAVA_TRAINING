@@ -40,6 +40,9 @@ public class Demo {
         //     }
         //     base = base*base;
         // }
+        for(int i=0;i<power;i++){
+            j = j*base;
+        }
         return j;
     }
 
@@ -55,16 +58,18 @@ public class Demo {
     }
 
     static boolean SpyNumber(int n){
-        double sum=0, r;
-        double expo = Expontential(n,2);
+        int sum=0, r;
+        int expo = (int)Expontential(n,2);
         while(expo>0){
+            // System.out.println(expo);
             r = expo%10;
             sum += r;
             expo /= 10;
         }
-        System.out.println(sum+" "+n);
         return sum==n;
     }
+
+    static boolean NeonNumber();
 
     public static void main(String[] args){
         int n = input.nextInt();

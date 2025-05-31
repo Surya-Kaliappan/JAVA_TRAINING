@@ -4,6 +4,8 @@
 4) Write a program to find the exponential of the given number.
 5) Write a program to find the given number of fiboncci series.
 6) Write a program to find the given number is Spy number.
+7) Write a program to convert from Decimal to Binary.
+8) Write a program to convert from Binary to Decimal.
 
 
 METHODS

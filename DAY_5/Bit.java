@@ -50,7 +50,15 @@ public class Bit{
         return count;
     }
 
+    static void DecToBin(int n){
+        int mask = 1<<7;
+        for(int i=0;i<8;i++){
+            System.out.print((n&mask)!=0 ? "1" : "0");
+            mask = mask>>1;
+        }
+    }
+
     public static void main(String[] args){
-        System.out.println(CountOnes(15));
+        DecToBin(15);
     }
 }
