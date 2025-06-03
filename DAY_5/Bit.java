@@ -58,7 +58,28 @@ public class Bit{
         }
     }
 
+    static int BinToDec(String n){
+        int sum = 0, pos, len = n.length();
+        char ch;
+        // while(n>0){
+        //     r = n%10;
+        //     sum += (Math.pow(2,pos)*r);
+        //     pos++;
+        //     n /= 10;
+        // }
+        // return sum;
+        for(int i=0;i<len;i++){
+            pos = len-i-1;
+            pos = n.charAt(pos)-'0';  // method to convert the char to numeric value
+            sum += (Math.pow(2,i)*pos);
+        }
+        return sum;
+    }
+
     public static void main(String[] args){
-        DecToBin(15);
+        Scanner input = new Scanner(System.in);
+        String n = input.nextLine();
+        System.out.println(BinToDec(n));
+        // BinToDec(n);
     }
 }

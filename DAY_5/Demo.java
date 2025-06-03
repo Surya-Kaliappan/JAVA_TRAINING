@@ -57,11 +57,10 @@ public class Demo {
         }
     }
 
-    static boolean SpyNumber(int n){
+    static boolean NeonNumber(int n){
         int sum=0, r;
         int expo = (int)Expontential(n,2);
         while(expo>0){
-            // System.out.println(expo);
             r = expo%10;
             sum += r;
             expo /= 10;
@@ -69,7 +68,16 @@ public class Demo {
         return sum==n;
     }
 
-    static boolean NeonNumber();
+    static boolean SpyNumber(int n){
+        int sum=0, mul=1, r;
+        while(n>0){
+            r = n%10;
+            sum += r;
+            mul *= r;
+            n /= 10;
+        }
+        return sum==mul;
+    }
 
     public static void main(String[] args){
         int n = input.nextInt();
