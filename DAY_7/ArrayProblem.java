@@ -81,24 +81,40 @@ public class ArrayProblem{
 
     static void FindFrequencyOfArray(int[] arr){
         int len = arr.length,count;
-        boolean[] check = new boolean[len];
+        // boolean[] check = new boolean[len];
+        // for(int i=0;i<len;i++){
+        //     if(!check[i]){
+        //         count = 0;
+        //         for(int j=i;j<len;j++){
+        //             if(arr[i]==arr[j]){
+        //             count++;
+        //             check[j] = true;
+        //             }
+        //         }
+        //         System.out.println(arr[i]+" -> "+count);
+        //     }
+        // }
+
+        Arrays.sort(arr);
+        int max=1,min=1,high=arr[len-1]+1;
+        int[] res = new int[high];
         for(int i=0;i<len;i++){
-            if(!check[i]){
-                count = 0;
-                for(int j=i;j<len;j++){
-                    if(arr[i]==arr[j]){
-                    count++;
-                    check[j] = true;
-                    }
-                }
-                System.out.println(arr[i]+" -> "+count);
-            }
+            res[arr[i]]++;
         }
+        for(int i=0;i<high;i++){
+            if(res[i]<min && res[i]>0){
+                min = res[i];
+            } else if(res[i]>max){
+                max = res[i];
+            }
+            System.out.println(i+" -> "+res[i]);
+        }
+        System.out.println(max+" "+min);
     }
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        int[] arr = {1,2,0,4,5,1,2,3,4};
+        int[] arr = {1,2,4,5,1,2,3,4};
         // System.out.println(checkTask(arr));
         // RotateArrayToRight(arr,4);
         // System.out.println(checkTask(arr));
