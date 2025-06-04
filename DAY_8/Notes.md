@@ -1,5 +1,5 @@
 # String
-    -> String is a class. It represents a sequence of characters, Java treats strings as objects of the 'String' classrather than as primitive data types.
+    -> String is a class. It represents a sequence of characters, Java treats strings as objects of the 'String' class rather than as primitive data types.
     -> String is Immutable in nature.
     -> It has two ways to declare.  (object & string literals)
     -> The Strig will store in SCP(String Constant Pool) when it is directly diclare 
