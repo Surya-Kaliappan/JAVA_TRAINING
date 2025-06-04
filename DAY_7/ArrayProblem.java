@@ -114,10 +114,11 @@ public class ArrayProblem{
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        int[] arr = {1,2,4,5,1,2,3,4};
+        int[] arr = {2,3,4,1,6};
         // System.out.println(checkTask(arr));
         // RotateArrayToRight(arr,4);
         // System.out.println(checkTask(arr));
-        FindFrequencyOfArray(arr);
+        // FindFrequencyOfArray(arr);
+        System.out.println(checkTask(arr));
     }
 }

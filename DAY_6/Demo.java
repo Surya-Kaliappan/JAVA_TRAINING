@@ -68,6 +68,16 @@ public class Demo{
         System.out.println(Arrays.toString(arr));
     }
 
+    static int ConStrToInt(String n){
+        int num = 0;
+        char ch;
+        for(int i=0;i<n.length();i++){
+            ch = n.charAt(i);
+            num = (num*10)+(ch - '0');
+        }
+        return num;
+    }
+
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         // int n = input.nextInt();
@@ -81,8 +91,12 @@ public class Demo{
         // System.out.println(Arrays.toString(arr));
         // System.out.println(SumArray(arr));
 
-        int[] a = {1,2,3,4,5,6,7};
-        int[] b = {1,2,3};
-        ReverseArray(a);
+        // int[] a = {1,2,3,4,5,6,7};
+        // int[] b = {1,2,3};
+        // ReverseArray(a);
+        String str = input.next();
+        int n = input.nextInt();
+        System.out.println(str);
+        System.out.println(n);
     }
 }
