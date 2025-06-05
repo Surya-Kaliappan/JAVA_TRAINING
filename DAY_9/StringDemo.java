@@ -68,14 +68,14 @@ public class StringDemo{
                 }
             }
             if(count!=len){
-                System.out.println("Work");
+                return strs[k].substring(0,i);
             }
             count1++;
         }
         if(count1==0){
             return "";
         }
-        return strs[k];
+        return strs[0];
     }
 
     public static void main(String[] args){
@@ -93,6 +93,6 @@ public class StringDemo{
 
         // System.out.println(checkPalindrome(new StringBuffer("ABCBA")));
         // System.out.println(checkPalindrome(new StringBuffer(121)));
-        System.out.println(task(new String[]{"fo23","fo","fo2"}));
+        System.out.println(task(new String[]{"flower","flow","flight"}));
     }
 }
