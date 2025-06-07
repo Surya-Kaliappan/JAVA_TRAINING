@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class StringDemo{
 
+    static Scanner input = new Scanner(System.in);
+
     // static boolean checkPalindrome(String n){
     //     int len = n.length();
     //     for(int i=0;i<len/2;i++){
@@ -78,6 +80,19 @@ public class StringDemo{
         return strs[0];
     }
 
+    static String toLower(String s){
+        StringBuffer sb = new StringBuffer(s);
+        char ch;
+        for(int i=0;i<sb.length();i++){
+            ch = sb.charAt(i);
+            if(ch>=65 && ch<=90){
+                sb.deleteCharAt(i);
+                sb.insert(i,(char)(ch+32));
+            }
+        }
+        return sb.toString();
+    }
+
     public static void main(String[] args){
         // StringBuffer sb = new StringBuffer("HELLO");
         // StringBuffer sb1 = new StringBuffer("World");
@@ -93,6 +108,7 @@ public class StringDemo{
 
         // System.out.println(checkPalindrome(new StringBuffer("ABCBA")));
         // System.out.println(checkPalindrome(new StringBuffer(121)));
-        System.out.println(task(new String[]{"flower","flow","flight"}));
+        String s = input.nextLine();
+        System.out.println(toLower(s));
     }
 }
