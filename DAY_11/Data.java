@@ -2,7 +2,7 @@ package school;
 
 import java.util.Scanner;
 
-public class Data{
+public class Data extends Student{
     static Student[] students = new Student[10];
     static int strength=0;
 

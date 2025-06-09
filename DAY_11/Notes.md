@@ -40,10 +40,18 @@
         * Multilevel  class A <-------- class B <--------- class C
 
                                       |-------- class B <-------|
-        * Hybrid        class A <-----|                         |------- class D
+        * Hybrid        class A <-----|                         |------- class D    (Diamong problem)
                                       |-------- class C <-------| 
 
 
                         class A <--------|
         * Hierarchical                   |------- class C
                         class B <--------|
+
+                        class A ---------|
+        * Multiple                       |------> class C
+                        class B ---------|
+
+* Overriding
+    - Don't reduce the visibility
+    - @Override -> this will override from the parent class (but nothing will change even don't use)
