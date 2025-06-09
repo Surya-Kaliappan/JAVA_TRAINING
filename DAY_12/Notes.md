@@ -8,19 +8,24 @@
 
 
 * Interface
-    - set of reules or contract
+    - set of rules or contract
     - In Java, an inerface is a reference type that defines a set of abstract methods along with some optional constants (static final fields). An interface can also include default methods, static methods, and nested types.
 
     `Class: Template`
 
 * The Class cannot be use both final and abstract.
+
+* `this` keyword should be use in the non-static
+
+* dynamic binding 
+    - 
     
 # Interface 
 * By default methods in the interface are abstract.
 * By default all methods in the ineraface are public.
 * Do not reduce visibility of the methods.
-* pricate access modifier is not allowed in interface.
-* variable(fields or global variable) in the inerface are by default final and static.
+* private access modifier is not allowed in interface.
+* variable(fields or global variable) in the interface are by default final and static.
 
 `global variable / fields / variable --> private, protected modifier not allowed.`
 
