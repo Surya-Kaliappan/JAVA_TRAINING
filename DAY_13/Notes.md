@@ -78,3 +78,4 @@ Checked Exception                  Uncheck Exception                            
      - unchecked exception are known at runtime.
      - All runtume exception are RuntimeException.
 
+* finally will dominate the try block in the exception.
