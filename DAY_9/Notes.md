@@ -26,6 +26,7 @@
 4) deleteCharAt(index)
 5) replace(start,end,"char seq")
 6) hashCode()
+7) setCharAt()
 
 # Problems
 1) Write a program to check the given string is palindrome or not
